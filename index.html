@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+        <title>Pokédex</title>
+    </head>
+    <body>
+
+        <section class="searchbox">
+            <form id="form" class="searchbox__form">
+                <input class="searchbox__input" type="text" name="pokemon" placeholder="Name or Number">
+                <button class="searchbox__submit">Search</button>
+            </form>
+        </section>
+            
+        <section class="pokemon">
+                
+            <div class="pokemon__card card">
+                <p class="card__number"></p>
+                <div class="card__header"></div>
+                <div class="card__image-div">
+                    <img class="card__image" src="">
+                </div>
+                <h1 class="heading-1 card__name"></h1>
+                <div class="card__types"></div>
+                <div class="card__measures u-mt-sm">
+                        <div class="card__measure">
+                            <svg class="card__measure--icon card__measure--icon-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M0 48C0 21.49 21.49 0 48 0H208C234.5 0 256 21.49 256 48V96H176C167.2 96 160 103.2 160 112C160 120.8 167.2 128 176 128H256V192H176C167.2 192 160 199.2 160 208C160 216.8 167.2 224 176 224H256V288H176C167.2 288 160 295.2 160 304C160 312.8 167.2 320 176 320H256V384H176C167.2 384 160 391.2 160 400C160 408.8 167.2 416 176 416H256V464C256 490.5 234.5 512 208 512H48C21.49 512 0 490.5 0 464V48z"/></svg>
+                            <p class="card__measure--text">Height</p>
+                            <p class="card__measure--text"></p>
+                        </div>
+                        <div class="card__measure">
+                            <svg class="card__measure--icon card__measure--icon-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M510.3 445.9L437.3 153.8C433.5 138.5 420.8 128 406.4 128H346.1c3.625-9.1 5.875-20.75 5.875-32c0-53-42.1-96-96-96S159.1 43 159.1 96c0 11.25 2.25 22 5.875 32H105.6c-14.38 0-27.13 10.5-30.88 25.75l-73.01 292.1C-6.641 479.1 16.36 512 47.99 512h416C495.6 512 518.6 479.1 510.3 445.9zM256 128C238.4 128 223.1 113.6 223.1 96S238.4 64 256 64c17.63 0 32 14.38 32 32S273.6 128 256 128z"/></svg>
+                            <p class="card__measure--text">Weight</p>
+                            <p class="card__measure--text"></p>
+                        </div>
+                        <div class="card__held-item">
+                        <p class="card__held-text">Item:</p>
+                        <div class="card__held-icon"></div>
+                    </div>
+                </div>
+
+                <div class="card__stats">
+                    <div class="card__stat">
+                        <p class="card__stat--name">HP</p>
+                        <p class="card__stat--num">X</p>
+                        <div class="card__stat--bar">
+                            <div class="card__stat--bar-fill"></div>
+                        </div>
+                    </div>
+                    <div class="card__stat">
+                        <p class="card__stat--name">ATK</p>
+                        <p class="card__stat--num">X</p>
+                        <div class="card__stat--bar">
+                            <div class="card__stat--bar-fill"></div>
+                        </div>
+                    </div>
+                    <div class="card__stat">
+                        <p class="card__stat--name">DEF</p>
+                        <p class="card__stat--num">X</p>
+                        <div class="card__stat--bar">
+                            <div class="card__stat--bar-fill"></div>
+                        </div>
+                    </div>
+                    <div class="card__stat">
+                        <p class="card__stat--name">SATK</p>
+                        <p class="card__stat--num">X</p>
+                        <div class="card__stat--bar">
+                            <div class="card__stat--bar-fill"></div>
+                        </div>
+                    </div>
+                    <div class="card__stat">
+                        <p class="card__stat--name">SDEF</p>
+                        <p class="card__stat--num">X</p>
+                        <div class="card__stat--bar">
+                            <div class="card__stat--bar-fill"></div>
+                        </div>
+                    </div>
+                    <div class="card__stat">
+                        <p class="card__stat--name">SPD</p>
+                        <p class="card__stat--num">X</p>
+                        <div class="card__stat--bar">
+                            <div class="card__stat--bar-fill"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__links u-mb-xs">
+                    <a id="previous" href="" class="card__link card__link-1 hidden">
+                        <div class="card__links-num card__links-num--1">#</div>
+                        <img src="" class="card__links-img card__previous-img">
+                    </a>
+                    <a id="next" href="" class="card__link card__link-2">
+                        <div class="card__links-num card__links-num--2">#2</div>
+                        <img src="" class="card__links-img card__next-img">
+                    </a>
+                </div>
+
+            </div>
+            
+            <input type="checkbox" id="expand-side" class="card__side-check">
+            <label class="card__side-expand" for="expand-side">
+                <span>&gt;</span>
+            </label>
+
+            <div class="card__side-buttons">
+                <a class="card__side-link">Original Art</a>
+                <a class="card__side-link">RB</a>
+                <a class="card__side-link">GS</a>
+                <a class="card__side-link">RS</a>
+                <a class="card__side-link">DP</a>
+                <a class="card__side-link">BW</a>
+                <a class="card__side-link">XY</a>
+                <a class="card__side-link">SM</a>
+            </div>
+            
+            <section id="seeds" style="grid-row:  1/2; z-index: 1; grid-column: 1 / 2;">  
+            </section>
+        </section>
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="js/pokedex.js"></script>
+    </body>
+    </html>

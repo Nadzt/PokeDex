@@ -1,0 +1,33 @@
+// COLOR VARIABLES
+$color-primary: #f70b2d;
+$color-primary-light: #d52835;
+
+$color-secondary: #2f6bb4;
+$color-secondary-light: #4D88D1;
+$color-secondary-dark: #21386e;
+
+$color-tertiaryy: #ffcb05;
+$color-tertiaryy-dark: #c69f08;
+
+$color-grey: #64606d;
+$color-black: #000000;
+$color-white: #f7f7f7;
+$color-grey-light-1: #e4e4e4;
+
+$color-grey-dark: #4e4335;
+
+
+// FONT VARIABLES
+$font-primary: "Roboto", sans-serif; // Normal font for text
+$font-display: "Open Sans", sans-serif; // Normal font for text
+$font-default-size: 1.6rem;
+
+// BOX SHADOW VARIABLES
+$box-shadow-light: 0 2rem 6rem rgba(0, 0, 0, .3);
+$box-shadow-dark: 0 2rem 6rem rgba( 0, 0, 0, .4);
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px

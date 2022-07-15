@@ -1,0 +1,44 @@
+.searchbox {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 7.5cm;
+
+    &__form {
+        height: 40px;
+    }
+
+    &__input {
+        padding: 1rem 1.5rem;
+        background-color: $color-white;
+        border-radius: .5rem;
+        border: 2px solid $color-grey;
+        outline: none;
+        width: 100%;
+        z-index: 1;
+        transition: all .2s;
+
+        &:focus {
+            outline: 2px solid $color-white;
+        }
+    }
+    &__submit {
+        background-color: $color-white;
+        width: 25%;
+        height: 100%;
+        z-index: 10;
+        position: absolute;
+        right: 0;
+        border: 2px solid $color-grey;
+        border-top-right-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+        transition: all .2s;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $color-grey;
+            color: $color-white;
+        }
+    }
+}

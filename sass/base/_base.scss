@@ -1,0 +1,45 @@
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+      scroll-behavior: smooth;
+    }
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-grey-dark;
+    font-weight: 300;
+
+    height: 100vh;
+    background-image: linear-gradient(to bottom,
+        $color-primary 48.5%,
+        $color-grey 48.5%,
+        $color-grey 51.5%,
+        $color-white 51.5%);
+    border: 4px solid $color-black;
+    
+    display: grid;
+    grid-template-rows: 100vh;
+    justify-content: center;
+}
